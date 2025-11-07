@@ -1,17 +1,18 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import authRoute from './routes/authRoute.js';
-import {app} from './utils/io.js';
+import prodRoute from './routes/productsRoutes.js';
+import cartRoute from './routes/cartRoutes.js';
 
 dotenv.config();
-const port = process.env.PORT;
-// const app = express();
+const port = process.env.PORT||5000;
+const app = express();
 
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/api',authRoute);
+app.use('/api',prodRoute);
+app.use('/api',cartRoute);
 
 app.get('/',(req,res)=>{
     res.send('Welcome to the backend');
