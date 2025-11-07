@@ -11,9 +11,8 @@ The project demonstrates complete **frontend–backend integration** with **REST
 **Backend:** Node.js, Express  
 **Database:** PostgreSQL (used instead of MongoDB/SQLite)  
 **Version Control:** Git & GitHub  
-**Demo:** [🎥 Watch Demo Video](#) *(add Loom / YouTube unlisted link)*
+**Demo:** [🎥 Watch Demo Video](#) *https://www.loom.com/share/0151aff21d8242fdadb1c58a3a504b81*
 
 ---
 
-## 📁 Project Structure
 
